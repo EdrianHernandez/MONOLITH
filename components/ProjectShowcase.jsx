@@ -1,12 +1,7 @@
 import React from 'react';
-import { Project } from '../types';
 import { ArrowRight } from 'lucide-react';
 
-interface ProjectShowcaseProps {
-  projects: Project[];
-}
-
-const ProjectShowcase: React.FC<ProjectShowcaseProps> = React.memo(({ projects }) => {
+const ProjectShowcase = React.memo(({ projects }) => {
   return (
     <section className="project-showcase-section w-full">
       {projects.map((project, index) => (
