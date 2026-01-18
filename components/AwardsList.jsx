@@ -1,11 +1,6 @@
 import React from 'react';
-import { Award } from '../types';
 
-interface AwardsListProps {
-  awards: Award[];
-}
-
-const AwardsList: React.FC<AwardsListProps> = React.memo(({ awards }) => {
+const AwardsList = React.memo(({ awards }) => {
   return (
     <section className="awards-section bg-mono-white text-mono-black py-24 px-6 md:px-12 lg:px-24 border-t border-mono-black/10">
       <div className="max-w-7xl mx-auto">
