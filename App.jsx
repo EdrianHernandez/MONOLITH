@@ -3,11 +3,10 @@ import ProjectShowcase from './components/ProjectShowcase';
 import FirmPhilosophy from './components/FirmPhilosophy';
 import AwardsList from './components/AwardsList';
 import ContactFooter from './components/ContactFooter';
-import { Project, Award, ContactInfo } from './types';
 import { Menu, X } from 'lucide-react';
 
 // Mock Data
-const projects: Project[] = [
+const projects = [
   {
     id: 'p1',
     title: 'The Void House',
@@ -34,21 +33,21 @@ const projects: Project[] = [
   }
 ];
 
-const awards: Award[] = [
+const awards = [
   { id: 'a1', year: '2023', title: 'Gold Medal for Sustainable Design', organization: 'World Architecture Festival' },
   { id: 'a2', year: '2022', title: 'Best Residential Project', organization: 'Dezeen Awards' },
   { id: 'a3', year: '2021', title: 'Emerging Architect of the Year', organization: 'Pritzker Forum' },
   { id: 'a4', year: '2020', title: 'Excellence in Concrete', organization: 'Global Material Institute' },
 ];
 
-const contactInfo: ContactInfo = {
+const contactInfo = {
   address: ['1400 Broadway, Suite 50', 'New York, NY 10018'],
   email: 'studio@monolith.arch',
   phone: '+1 (212) 555-0199',
   coordinates: { lat: 40.7536, lng: -73.9832 }
 };
 
-const App: React.FC = () => {
+const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
