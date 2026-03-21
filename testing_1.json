@@ -1,0 +1,72 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation menu is hidden behind the page background.",
+        "positive_node": "<div className={`fixed inset-0 bg-mono-white z-20 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isNavOpen ? 'translate-y-0' : '-translate-y-full'}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-2.png",
+        "file_path": "components/ProjectShowcase.jsx",
+        "text_anchor": "The project number at the corner is missing.",
+        "positive_node": "<span className=\"font-sans text-white/0 text-xs md:text-sm tracking-widest\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-3.png",
+        "file_path": "components/ProjectShowcase.jsx",
+        "text_anchor": "The project title on mobile is shifted up and overlapping the image.",
+        "positive_node": "<div className=\"absolute top-8 left-6 md:hidden z-20 -mt-16\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-4.png",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "text_anchor": "Some text in the philosophy section is too tiny to read.",
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-5.png",
+        "file_path": "components/AwardsList.jsx",
+        "text_anchor": "The awards list items are not aligned properly in a grid.",
+        "positive_node": "<div className=\"md:col-span-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-6.png",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "text_anchor": "The main philosophy section heading is not showing.",
+        "positive_node": "<h2 className=\"text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-7.png",
+        "file_path": "components/AwardsList.jsx",
+        "text_anchor": "The awards section heading is overlapping with the awards list below it.",
+        "positive_node": "<div className=\"flex flex-col items-center text-center mb-16 md:mb-24 -mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-8.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The studio address is shifted way to the left and off the page.",
+        "positive_node": "<div className=\"-ml-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-9.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The location marker on the map has moved to the wrong position.",
+        "positive_node": "<div className=\"absolute top-0 left-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-10.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The social media links at the bottom are barely visible.",
+        "positive_node": "<a key={social} href=\"#\" className=\"text-sm uppercase tracking-widest hover:text-mono-gray transition-colors opacity-10\">"
+    }
+]

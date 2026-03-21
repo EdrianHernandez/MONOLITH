@@ -1,0 +1,122 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "App.jsx",
+        "image_anchor": "MONOLITH_bug-1.png",
+        "text_anchors": [
+            "The navigation menu is hidden behind the page background.",
+            "The navigation overlay is rendering behind the header elements instead of on top of the page.",
+            "I cannot access the navigation links because the overlay is hidden behind other page elements."
+        ],
+        "positive_node": "<div className={`fixed inset-0 bg-mono-white z-20 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isNavOpen ? 'translate-y-0' : '-translate-y-full'}`}>",
+        "playwright_selector": "header + main > div:first-child"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/ProjectShowcase.jsx",
+        "image_anchor": "MONOLITH_bug-2.png",
+        "text_anchors": [
+            "The project number at the corner is missing.",
+            "The index text has zero opacity making it completely invisible.",
+            "I cannot see the project numbering system."
+        ],
+        "positive_node": "<span className=\"font-sans text-white/0 text-xs md:text-sm tracking-widest\">",
+        "playwright_selector": ".project-item:first-child > div:last-child > span"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/ProjectShowcase.jsx",
+        "image_anchor": "MONOLITH_bug-3.png",
+        "text_anchors": [
+            "The project title on mobile is shifted up and overlapping the image.",
+            "Negative spacing is causing the mobile title to stack too close to the top of the image layer.",
+            "The project title is overlapping and covering important image content."
+        ],
+        "positive_node": "<div className=\"absolute top-8 left-6 md:hidden z-20 -mt-16\">",
+        "playwright_selector": ".project-item:first-child > div.md\\:hidden h2"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "image_anchor": "MONOLITH_bug-4.png",
+        "text_anchors": [
+            "Some text in the philosophy section is too tiny to read.",
+            "The italic subtitle word has been resized to extra-small creating a visual hierarchy issue.",
+            "I cannot read the inline word in the philosophy heading because it is too small."
+        ],
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>",
+        "playwright_selector": ".firm-header-block h2 span.italic"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/AwardsList.jsx",
+        "image_anchor": "MONOLITH_bug-5.png",
+        "text_anchors": [
+            "The awards list items are not aligned properly in a grid.",
+            "Grid column distribution is broken causing uneven spacing in the awards layout.",
+            "The award information is cramped and not distributed evenly across the available space."
+        ],
+        "positive_node": "<div className=\"md:col-span-6\">",
+        "playwright_selector": ".award-row:first-child > div:first-child"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "image_anchor": "MONOLITH_bug-6.png",
+        "text_anchors": [
+            "The main philosophy section heading is not showing.",
+            "The heading text has zero opacity making it completely transparent.",
+            "I cannot see the section title for the philosophy section."
+        ],
+        "positive_node": "<h2 className=\"text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight opacity-0\">",
+        "playwright_selector": ".firm-header-block h2"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/AwardsList.jsx",
+        "image_anchor": "MONOLITH_bug-7.png",
+        "text_anchors": [
+            "The awards section heading is overlapping with the awards list below it.",
+            "Negative margin is causing the heading to collapse down into the grid items.",
+            "The awards list and heading are overlapping making text unreadable."
+        ],
+        "positive_node": "<div className=\"flex flex-col items-center text-center mb-16 md:mb-24 -mb-12\">",
+        "playwright_selector": ".awards-section > div.max-w-7xl > div:first-child"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/ContactFooter.jsx",
+        "image_anchor": "MONOLITH_bug-8.png",
+        "text_anchors": [
+            "The studio address is shifted way to the left and off the page.",
+            "The contact address section has excessive negative margin pushing content off the visible area.",
+            "I cannot read the studio address because it is pushed outside the viewable area."
+        ],
+        "positive_node": "<div className=\"-ml-12\">",
+        "playwright_selector": ".contact-details > div:nth-child(2) > div:first-child"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/ContactFooter.jsx",
+        "image_anchor": "MONOLITH_bug-9.png",
+        "text_anchors": [
+            "The location marker on the map has moved to the wrong position.",
+            "The map pin is positioned at the top-left corner instead of being centered on New York.",
+            "The map indicator is not showing the correct location for the studio."
+        ],
+        "positive_node": "<div className=\"absolute top-0 left-0\">",
+        "playwright_selector": ".map-container div:nth-child(2) > div:nth-child(3)"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "file_path": "components/ContactFooter.jsx",
+        "image_anchor": "MONOLITH_bug-10.png",
+        "text_anchors": [
+            "The social media links at the bottom are barely visible.",
+            "The social media links have extremely low opacity making them nearly invisible against the background.",
+            "I cannot see the social media links to click on them."
+        ],
+        "positive_node": "<a key={social} href=\"#\" className=\"text-sm uppercase tracking-widest hover:text-mono-gray transition-colors opacity-10\">",
+        "playwright_selector": ".social-links a"
+    }
+]
