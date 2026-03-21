@@ -28,7 +28,7 @@ const ProjectShowcase = React.memo(({ projects }) => {
           </div>
 
           {/* Mobile Title - Standard horizontal */}
-          <div className="absolute top-8 left-6 md:hidden z-20">
+          <div className="absolute top-8 left-6 md:hidden z-20 -mt-16">
              <h2 className="text-4xl font-serif text-white tracking-tight uppercase drop-shadow-md">
               {project.title}
             </h2>
@@ -53,7 +53,7 @@ const ProjectShowcase = React.memo(({ projects }) => {
 
           {/* Index Number */}
           <div className="absolute top-6 right-6 md:top-12 md:right-12 z-20">
-            <span className="font-sans text-white/60 text-xs md:text-sm tracking-widest">
+            <span className="font-sans text-white/0 text-xs md:text-sm tracking-widest">
               {(index + 1).toString().padStart(2, '0')}
             </span>
           </div>

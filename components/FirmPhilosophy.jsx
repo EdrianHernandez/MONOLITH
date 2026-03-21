@@ -10,9 +10,9 @@ const FirmPhilosophy = React.memo(() => {
           <h3 className="text-xs font-sans tracking-[0.2em] uppercase text-mono-gray mb-6">
             Our Philosophy
           </h3>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight opacity-0">
             Structure <br/>
-            <span className="italic font-light opacity-60">as</span> <br/>
+            <span className="italic font-light opacity-60 text-xs">as</span> <br/>
             Sculpture.
           </h2>
         </div>

@@ -81,7 +81,7 @@ const App = () => {
         </button>
 
         {/* Full Screen Navigation Overlay */}
-        <div className={`fixed inset-0 bg-mono-white z-40 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isNavOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className={`fixed inset-0 bg-mono-white z-20 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isNavOpen ? 'translate-y-0' : '-translate-y-full'}`}>
           <nav className="flex flex-col space-y-8 text-center">
             {['Work', 'Philosophy', 'Awards', 'Contact'].map((item) => (
               <a 

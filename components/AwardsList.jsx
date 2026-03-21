@@ -4,7 +4,7 @@ const AwardsList = React.memo(({ awards }) => {
   return (
     <section className="awards-section bg-mono-white text-mono-black py-24 px-6 md:px-12 lg:px-24 border-t border-mono-black/10">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-16 md:mb-24">
+        <div className="flex flex-col items-center text-center mb-16 md:mb-24 -mb-12">
           <h2 className="text-5xl md:text-7xl font-serif mb-4">Awards</h2>
           <span className="text-mono-gray font-sans text-sm tracking-widest uppercase">
             2019 — Present
@@ -17,7 +17,7 @@ const AwardsList = React.memo(({ awards }) => {
               key={award.id} 
               className="award-row group grid grid-cols-1 md:grid-cols-12 gap-4 py-8 border-b border-mono-black/10 hover:bg-mono-black/5 transition-colors duration-300 px-2"
             >
-              <div className="md:col-span-2">
+              <div className="md:col-span-6">
                 <span className="font-sans text-mono-gray text-sm">{award.year}</span>
               </div>
               <div className="md:col-span-6">
