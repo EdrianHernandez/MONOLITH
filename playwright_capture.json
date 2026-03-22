@@ -114,9 +114,7 @@
             "The map indicator is not showing the correct location for the studio."
         ],
         "positive_node": "<div className=\"absolute top-0 left-0\">",
-        "playwright_selector": ".map-container > div",
-        "status": "failed",
-        "error": "Could not find selector '.map-container div:nth-child(2) > div:nth-child(3)'. Updated selector to '.map-container > div'. Verify this captures the correct element."
+        "playwright_selector": ".map-container div[class*='absolute'][class*='top-0']"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
