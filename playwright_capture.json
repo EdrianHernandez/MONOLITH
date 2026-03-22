@@ -9,7 +9,8 @@
             "I cannot access the navigation links because the overlay is hidden behind other page elements."
         ],
         "positive_node": "<div className={`fixed inset-0 bg-mono-white z-20 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isNavOpen ? 'translate-y-0' : '-translate-y-full'}`}>",
-        "playwright_selector": "header + main > div:first-child"
+        "playwright_selector": "header + main > div:first-child",
+        "status": "success"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -21,7 +22,8 @@
             "I cannot see the project numbering system."
         ],
         "positive_node": "<span className=\"font-sans text-white/0 text-xs md:text-sm tracking-widest\">",
-        "playwright_selector": ".project-item:first-child > div:last-child > span"
+        "playwright_selector": ".project-item:first-child > div:last-child > span",
+        "status": "success"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -33,7 +35,9 @@
             "The project title is overlapping and covering important image content."
         ],
         "positive_node": "<div className=\"absolute top-8 left-6 md:hidden z-20 -mt-16\">",
-        "playwright_selector": ".project-item:first-child > div.md\\:hidden h2"
+        "playwright_selector": ".project-item:first-child > div.md\\:hidden h2",
+        "status": "warning",
+        "note": "Element screenshot failed (element might be hidden). Full page screenshot captured instead."
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -45,7 +49,8 @@
             "I cannot read the inline word in the philosophy heading because it is too small."
         ],
         "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>",
-        "playwright_selector": ".firm-header-block h2 span.italic"
+        "playwright_selector": ".firm-header-block h2 span.italic",
+        "status": "success"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -57,7 +62,8 @@
             "The award information is cramped and not distributed evenly across the available space."
         ],
         "positive_node": "<div className=\"md:col-span-6\">",
-        "playwright_selector": ".award-row:first-child > div:first-child"
+        "playwright_selector": ".award-row:first-child > div:first-child",
+        "status": "success"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -69,7 +75,8 @@
             "I cannot see the section title for the philosophy section."
         ],
         "positive_node": "<h2 className=\"text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight opacity-0\">",
-        "playwright_selector": ".firm-header-block h2"
+        "playwright_selector": ".firm-header-block h2",
+        "status": "success"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -81,7 +88,8 @@
             "The awards list and heading are overlapping making text unreadable."
         ],
         "positive_node": "<div className=\"flex flex-col items-center text-center mb-16 md:mb-24 -mb-12\">",
-        "playwright_selector": ".awards-section > div.max-w-7xl > div:first-child"
+        "playwright_selector": ".awards-section > div.max-w-7xl > div:first-child",
+        "status": "success"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -93,7 +101,8 @@
             "I cannot read the studio address because it is pushed outside the viewable area."
         ],
         "positive_node": "<div className=\"-ml-12\">",
-        "playwright_selector": ".contact-details > div:nth-child(2) > div:first-child"
+        "playwright_selector": ".contact-details > div:nth-child(2) > div:first-child",
+        "status": "success"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -105,7 +114,9 @@
             "The map indicator is not showing the correct location for the studio."
         ],
         "positive_node": "<div className=\"absolute top-0 left-0\">",
-        "playwright_selector": ".map-container div:nth-child(2) > div:nth-child(3)"
+        "playwright_selector": ".map-container > div",
+        "status": "failed",
+        "error": "Could not find selector '.map-container div:nth-child(2) > div:nth-child(3)'. Updated selector to '.map-container > div'. Verify this captures the correct element."
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
@@ -117,6 +128,7 @@
             "I cannot see the social media links to click on them."
         ],
         "positive_node": "<a key={social} href=\"#\" className=\"text-sm uppercase tracking-widest hover:text-mono-gray transition-colors opacity-10\">",
-        "playwright_selector": ".social-links a"
+        "playwright_selector": ".social-links a",
+        "status": "success"
     }
 ]
