@@ -25,7 +25,7 @@
         "image_anchor": "MONOLITH_bug-4.png",
         "file_path": "components/FirmPhilosophy.jsx",
         "text_anchor": "Some text in the philosophy section is too tiny to read.",
-        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH",

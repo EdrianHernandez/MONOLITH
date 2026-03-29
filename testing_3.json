@@ -25,7 +25,7 @@
         "image_anchor": "MONOLITH_bug-4.png",
         "file_path": "components/FirmPhilosophy.jsx",
         "text_anchor": "I cannot read the inline word in the philosophy heading because it is too small.",
-        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH",
